@@ -46,14 +46,14 @@
                  <p>Segundo Numero: <input type="number" th:field="*{Num2}" class="form-control" /></p>
                  <p>
                  Operacion:
-                 <select th:field="*{Op}" class="form-control">
+                 <select th:field="*{operador}" class="form-control">
                  <option value="+">Suma (+)</option>
                  <option value="-">Resta (-)</option>
                  <option value="*">Multiplicacion (*)</option>
                  <option value="/">Division (/)</option>
                  </select>
                  </p>
-                 <label class="text-center" th:text="'Resultado de '+ *{Num1}+ *{Op}+ *{Num2}+ '=' + *{res}"></label>
+                 <label class="text-center" th:text="'Resultado de '+ *{num1}+ *{operador}+ *{num2}+ '=' + *{resultado}"></label>
                  <p></p>
                  <p class="text-center"><input type="submit" value="Calcular"/> <input type="reset" value="Limpiar"/></p>
                  </form>

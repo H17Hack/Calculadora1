@@ -12,14 +12,14 @@ public class CalculadoraController {
 	@GetMapping("/calculadora")
 	public String index(Model modelo) {
 		modelo.addAttribute("calcu", new Calculadora());
-		return "/Calculadora/index";
+		return "/calculadora/Index";
 	}
 	@PostMapping("/resultado")
 	public String resultados(@ModelAttribute Calculadora calcu, Model modelo)
 	{
 		calcu.Calcular();
 		modelo.addAttribute("calcu", calcu);
-		return "/calculadora/index";
+		return "/calculadora/Index";
 		
 	}
 }
