@@ -4,6 +4,7 @@ public class Calculadora {
 	
 
 	private int num1;
+	
 	public int getNum1() {
 		return num1;
 	}
@@ -48,7 +49,9 @@ public class Calculadora {
 		break;
 		
 		case '/':
-			resultado = num1 / num2;
+			float n1= num1;
+			float n2= num2;
+			resultado = n1 / n2;
 		break;
 		}
 	}
